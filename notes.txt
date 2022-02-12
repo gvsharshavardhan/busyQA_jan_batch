@@ -85,6 +85,7 @@ installations:
 1. create github account
 2. install git
 3. install maven
+4. install intellij
 
 19-02-2022
 
