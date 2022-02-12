@@ -1,0 +1,16 @@
+package com.busyqa.abstractionDemo;
+
+public abstract class Son implements BuildingTemplate{
+    @Override
+    public void constructFoundation(String sand) {
+        System.out.println("i require 10kg of " + sand );
+    }
+
+    @Override
+    public void constructPillars(String iron) {
+        System.out.println("100kg of " + iron );
+    }
+
+    abstract void constructPool();
+
+}

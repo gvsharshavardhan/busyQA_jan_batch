@@ -1,0 +1,112 @@
+OOPS:
+-----
+1. Class - template/blueprint
+2. Object - instance of a class
+3. Constructor
+        why? - to initialize instance variable
+4. Methods
+5. Static(common)
+    1. we cannot access non static members inside static blocks.
+6. Private, Public
+
+
+class:
+1. attributes - variables
+2. behaviour - methods
+
+Inheritance: (extends)
+-------------
+1. Acquiring properties from parent
+2. types:
+        1. single
+        2. multi level
+        3. hierarchical
+
+3. Java do not support multiple inheritance
+    reason: method resolution conflict when we have same methods in both the parent classes
+
+parent - child possibilities:
+----------------------------
+1. parent reference - parent object (possible)
+2. son reference - son object (possible)
+3. parent reference  - son object (possible)
+    1. we can access only methods that are present in parent class
+    2. but implementation is gonna be son's implementation.
+
+4. son reference - parent object (not possible)
+    1. child reference cannot hold parent class object.
+
+DownCasting:
+------------
+1. converting parent reference variable to child reference variable to
+access child class properties.
+
+((Child)P).<you can access all child class properties>
+
+
+access modifiers:
+-----------------
+1. public - no restrictions at all.
+2. protected
+    1. access is restricted to within the package and within the inherited classes.
+3. default -> is the default modifier
+    1. access is restricted to with package
+    2. thought a class inherits default members from its parent class,
+     if it is present in other pkg it cannot access default members.
+4. private
+        1. access is restricted to just within the class
+        2. cannot access outside the class
+
+order: public > protected > default > private
+
+final:
+------
+variables: then variable becomes a constant(i cannot change the variable value)
+methods:  can access it in child classes but cannot override it.
+
+super
+this
+constructor chaining
+
+Object class is super class for all the classes in java.
+toString() -> comes from object class, to have a meaning full representation of object.
+
+Abstraction:
+-------------
+1. Interface (implements)
+    1. can have only abstract methods.
+    2. all the methods are public and abstract in interface
+    2. all the variables are public final static.
+2. Abstract classes
+    1. contains both concrete and abstarct methods
+ note: cannot create object for interfaces and abstract classes.
+
+installations:
+1. create github account
+2. install git
+3. install maven
+
+19-02-2022
+
+******
+Collections: (generic) (auto boxing/unboxing -> wrapper classes)
+1. Array List
+2. Hashmap
+3. Hashset
+
+Exceptional handling:
+
+Selenium:
+----------
+what?
+why?
+basic installation
+basic code
+****************locators*****************
+interactions
+
+high level:
+------------
+testng
+maven
+git
