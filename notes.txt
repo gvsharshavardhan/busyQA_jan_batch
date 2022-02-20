@@ -92,8 +92,10 @@ installations:
 ******
 Collections: (generic) (auto boxing/unboxing -> wrapper classes)
 1. Array List
-2. Hashmap
-3. Hashset
+2. Linked List
+3. Hashmap
+4. Hashset
+5. TreeSet
 
 Exceptional handling:
 
@@ -111,3 +113,119 @@ high level:
 testng
 maven
 git
+
+
+Collections:
+--------------
+1. can i specify size of array later after declaration?
+Ans: NO
+
+2. can i store different data types in an array?
+Ans: Yes
+
+List:
+------
+1. Dynamic in size.
+2. It can hold multiple data types.
+3. It can hold duplicate values.
+4. can hold multiple null values.
+
+ArrayList:
+-----------
+1. Dynamic in size.
+2. It can hold multiple data types.
+3. It can hold duplicate values.
+4. It maintains insertion order.
+
+add()
+remove()
+set()
+size()
+contains()
+clear()
+
+LinkedList:
+-----------
+1. Dynamic in size.
+2. It can hold multiple data types.
+3. It can hold duplicate values.
+4. It maintains insertion order.
+
+diff b/w linkedlist and arraylist?
+1. linked list -> double linked concept (updations like delete, add, remove)
+2. ArrayList -> growable array (retrivel(get))
+
+
+Set:
+----
+
+Hash set:
+-----------
+1. Dynamic in size
+2. can hold different data types
+3. cannot store duplicates**
+4. unordered (insertion order is not preserved)
+5. can hold only one null value.
+
+
+linkedHashSet:
+1. Dynamic in size
+2. can hold different data types
+3. cannot store duplicates**
+5. can hold only one null value.
+1. Insertion order is preserved
+
+TreeSet:
+1. Dynamic in size
+3. cannot store duplicates**
+5. can hold only one null value.
+
+1. It stores values in sorted order(default is asc order).
+2. can hold only similar data types.
+
+
+Generics:
+----------
+we can specify data type for collections using generics concept.
+1. we cannot specify primitive data types(specify its wrapper class instead of primitive type)
+
+
+Map:
+----
+1. stores elements in key:value format
+2. each key:value pair is called an entry.
+3. will not maintains insertion order.
+
+key:
+-----
+1. cannot hold duplicate keys
+2. can hold any datatype
+3. can have only one null key
+
+values:
+--------
+1. can hold duplicates
+2. can hold duplicated null values.
+3. can hold any datatype.
+
+
+Exception Handling:
+-------------------
+1. Errors
+2. Exceptions
+    1. checked
+    2. Unchecked
+
+
+
+
+
+
+
+
+
+
+
+
+
+
