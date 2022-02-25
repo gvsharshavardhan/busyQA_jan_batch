@@ -1,4 +1,4 @@
-package com.assignments.assignment2;
+package com.assignments.assignment2_arrays;
 
 public class FindDuplicatesInAnArray {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.assignments.assignment2;
+package com.assignments.assignment2_arrays;
 
 import java.util.Arrays;
 
