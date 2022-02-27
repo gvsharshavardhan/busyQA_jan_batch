@@ -1,0 +1,24 @@
+
+
+1. Exception in thread "main" org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500.
+Message: session not created: This version of ChromeDriver only supports Chrome version 89
+Reason: Driver version and browser version are not in sync.
+
+2.Exception in thread "main" org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Reason: When selenium couldn't identify the driver location/driver.
+
+3.Exception in thread "main" org.openqa.selenium.InvalidArgumentException: invalid argument
+Reason: if you get this error in get() method, then probably you might have not specified the protocol(http/ https)
+
+4.NullPointerException
+if you are not initiating a ref variable then null is the default value. when you perform actions on null, you gonna get null pointer exception.
+
+5.Exception in thread "main" java.lang.IllegalStateException: The path to the driver executable
+The path to the driver executable must be set by the webdriver.opera.driver system property; for more information,
+see https://github.com/operasoftware/operachromiumdriver. The latest version can be downloaded from https://github.com/operasoftware/operachromiumdriver/releases
+solution: download respective drive and specify its location to system(system variables using setProperty).
+
+6. org.openqa.selenium.ElementNotInteractableException: element not interactable
+element is present, but we cannot interact with element.
+    1. element might be hidden due to page dimension
+    2. other elements can overlay upon our element.
