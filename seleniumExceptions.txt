@@ -22,3 +22,19 @@ solution: download respective drive and specify its location to system(system va
 element is present, but we cannot interact with element.
     1. element might be hidden due to page dimension
     2. other elements can overlay upon our element.
+
+7. org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Open a popup windows"}
+Reason: if element is not present inside the DOM.
+1. wrong locator.
+2. changes in the webpage(lcoator changes due to new development)
+
+
+8. org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+    Reason: 1. element is not more fresh
+            2. page might got refreshed
+            3. element might got refreshed(ajax calls)
+            4. you might have navigated to other page and again navigated to the old page and performing the actions.
+
+    Solution:
+        1. do not find the element if you are not acting upon it immediately
+        2. find the element only when you want to perform some action on it.
